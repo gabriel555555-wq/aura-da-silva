@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #353940);
+    color: #000000;
+    min-height: 100vh;
+    background-image: url("planeta.jpg");
+
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 30, 107, 0.9);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.);
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    letter-spacing: 3px;
+}
+
+h2, h3 {
+    color: #000000;
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #46618b;
+    border-radius: 7px;
+    background: #172a4c;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #000000;
+    transform: scale(1.02);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background: #005eff;
+    border-radius: 12px;
+}
+
+#imagemPerfil {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.escondido {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 18px;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 16px;
+    }
+
+    #resultado {
+        padding: 15px;
+    }
+}

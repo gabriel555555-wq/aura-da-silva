@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura da silva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.11/p5.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <h1>MISSÃO AURA DA SILVA</h1>
+        <p>Descubra seu perfil para a missão espacial de 2089</p>
+        <p>AURA apenas.</p>
+
+        <section id="formulario">
+            <h2>DADOS DO PARTICIPANTE</h2>
+
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="nascimento"><strong>Data de nascimento:</strong></label>
+            <input type="date" id="nascimento">
+
+            <h2>Questionário</h2>
+
+            <label for="pergunta1">1. No que você é melhor?</label>
+            <select id="pergunta1">
+                <option value="">Selecione</option>
+                <option value="1">Construir equipamentos</option>
+                <option value="2">Pesquisar descobertas</option>
+                <option value="3">Explorar lugares</option>
+                <option value="4">Organização dos envolvidos na missão.</option>
+            </select>
+
+            <label for="pergunta2">2. Qual habilidade você sente que se sairia melhor do que os demais?</label>
+            <select id="pergunta2">
+                <option value="">Selecione</option>
+                <option value="1">Resolver problemas técnicos</option>
+                <option value="2">Analisar informações</option>
+                <option value="3">Enfrentar desafios</option>
+                <option value="4">Planejar estratégias</option>
+            </select>
+
+            <label for="pergunta3">3. Em uma missão, você se daria melhor em?:</label>
+            <select id="pergunta3">
+                <option value="">Selecione</option>
+                <option value="1">Consertar a nave</option>
+                <option value="2">Estudar formas de vida</option>
+                <option value="3">Conhecer o planeta</option>
+                <option value="4">Lideração de grupos</option>
+            </select>
+
+            <label for="pergunta4">4. Qual equipamento você tem mais maestria?</label>
+            <select id="pergunta4">
+                <option value="">Selecione</option>
+                <option value="1">Ferramentas tecnológicas</option>
+                <option value="2">Laboratório portátil</option>
+                <option value="3">Equipamento de exploração</option>
+                <option value="4">Mapa estratégico</option>
+            </select>
+
+            <button type="button" onclick="descobrirPerfil()">
+                Finalizar
+            </button>
+        </section>
+
+        <section id="resultado" class="escondido">
+            <h2>Resultado do perfil.</h2>
+            <h3 id="perfilNome"></h3>
+
+            <img id="imagemPerfil" src="" alt="Imagem do perfil">
+
+            <p id="dados"></p>
+            <p id="categoria"></p>
+            <p id="descricao"></p>
+            <p id="recomendacao"></p>
+
+            <button type="button" onclick="refazer()">
+                -refazer-
+            </button>
+        </section>
+    </main>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
